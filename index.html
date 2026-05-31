@@ -37,7 +37,7 @@
 <link rel="icon" href="data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'&gt;&lt;rect width='32' height='32' rx='8' fill='%232563EB'/&gt;&lt;text x='16' y='22' font-family='Inter,Arial' font-size='16' font-weight='800' fill='%23fff' text-anchor='middle'&gt;A4&lt;/text&gt;&lt;/svg&gt;">
 
 <!-- Structured Data: Organization -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"ai4cctv","alternateName":"ai 4 cctv","url":"https://www.ai4cctv.in","logo":"https://www.ai4cctv.in/logo.png","description":"AI-powered Facial Attendance System and Smart Security Solutions for businesses using existing CCTV cameras.","email":"info@ai4cctv.in","telephone":"+91-98765-43210","address":{"@type":"PostalAddress","addressCountry":"IN"},"sameAs":["https://www.linkedin.com/company/ai4cctv","https://twitter.com/ai4cctv"],"foundingDate":"2021","areaServed":"IN","makesOffer":[{"@type":"Offer","name":"AI Facial Attendance System"},{"@type":"Offer","name":"PPE Detection System"},{"@type":"Offer","name":"Restricted Zone Monitoring"},{"@type":"Offer","name":"Staff Monitoring System"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"ai4cctv","alternateName":"ai 4 cctv","url":"https://www.ai4cctv.in","logo":"https://www.ai4cctv.in/logo.png","description":"AI-powered Facial Attendance System and Smart Security Solutions for businesses using existing CCTV cameras.","email":"contact@ai4cctv.in","telephone":"+91-8100280356","address":{"@type":"PostalAddress","addressCountry":"IN"},"sameAs":["https://www.linkedin.com/company/ai4cctv","https://twitter.com/ai4cctv"],"foundingDate":"2021","areaServed":"IN","makesOffer":[{"@type":"Offer","name":"AI Facial Attendance System"},{"@type":"Offer","name":"PPE Detection System"},{"@type":"Offer","name":"Restricted Zone Monitoring"},{"@type":"Offer","name":"Staff Monitoring System"}]}</script>
 <!-- Structured Data: SoftwareApplication -->
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"ai4cctv","operatingSystem":"Web, Linux, Windows","applicationCategory":"BusinessApplication","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","ratingCount":"127"},"offers":{"@type":"Offer","price":"0","priceCurrency":"INR","description":"Free 30-minute live demo"}}</script>
 <!-- Structured Data: FAQ -->
@@ -1313,6 +1313,22 @@ window._fbSignIn=signInWithEmailAndPassword;window._fbSignOut=signOut;window._fb
 onAuthStateChanged(auth,user=>{window._adminUser=user;if(user&&document.getElementById('admin-dash-screen'))renderAdminLeads();});
 </script>
 <!-- EmailJS removed: using Formspree instead -->
+<!-- Calendly -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script>
+window.addEventListener('load',function(){
+  if(typeof Calendly !== 'undefined'){
+    Calendly.initBadgeWidget({
+      url:'https://calendly.com/mokbulhossain',
+      text:'Schedule time with me',
+      color:'#0069ff',
+      textColor:'#ffffff',
+      branding:true
+    });
+  }
+});
+</script>
 </head>
 <body>
 
@@ -1355,8 +1371,8 @@ onAuthStateChanged(auth,user=>{window._adminUser=user;if(user&&document.getEleme
   <button class="ms" onclick="goSol(2)">— PPE Detection</button>
   <button class="ms" onclick="goSol(3)">— Restricted Zone</button>
   <button class="mi" onclick="go('about');closeMob()">About</button>
-  <button class="mi" onclick="go('contact');closeMob()">Contact</button>
-  <div style="margin-top:18px;"><button class="btn btn-p btn-lg" style="width:100%;" onclick="go('contact');closeMob()">Book a free demo</button></div>
+  <button class="mi" onclick="Calendly.initPopupWidget({url:'https://calendly.com/mokbulhossain'});closeMob();return false;">Contact</button>
+  <div style="margin-top:18px;"><button class="btn btn-p btn-lg" style="width:100%;" onclick="Calendly.initPopupWidget({url:'https://calendly.com/mokbulhossain'});closeMob();return false;">Book a free demo</button></div>
 </nav>
 
 <!-- ============================================================
@@ -2034,7 +2050,7 @@ onAuthStateChanged(auth,user=>{window._adminUser=user;if(user&&document.getEleme
           <div class="fld"><label>Email address</label><input id="fe" type="email" placeholder="you@company.com"></div>
         </div>
         <div class="frow">
-          <div class="fld"><label>Phone</label><input id="fp" type="tel" placeholder="+91 98765 43210"></div>
+          <div class="fld"><label>Phone</label><input id="fp" type="tel" placeholder="+91 8100280356"></div>
           <div class="fld"><label>Company</label><input id="fc2" type="text" placeholder="Your company"></div>
         </div>
         <div class="fld" style="margin-bottom:14px;"><label>I’m interested in</label><select id="fi"><option>AI Facial Attendance System</option><option>Staff Monitoring</option><option>PPE Detection</option><option>Restricted Zone Monitoring</option><option>Full platform</option></select></div>
@@ -2043,12 +2059,12 @@ onAuthStateChanged(auth,user=>{window._adminUser=user;if(user&&document.getEleme
       </div>
       <div class="cf-side">
         <div class="cf-info">
-          <h4>Book a free live demo</h4>
+          <h4>&#128197; Book a Free Live Demo</h4>
           <p>See ai4cctv in action on your own camera feed. A 30-minute walkthrough with our solutions engineer.</p>
-          <button class="btn btn-t" style="width:100%;" onclick="showToast('Demo request received. We will contact you within 24 hours.')">Schedule demo <span class="arr">→</span></button>
+          <button class="btn btn-p" style="width:100%;background:#0069ff;" onclick="Calendly.initPopupWidget({url:'https://calendly.com/mokbulhossain'});return false;">&#128197; Schedule Demo <span class="arr">→</span></button>
         </div>
-        <div class="cf-row"><span class="tile s48 t-blue"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 7 9-7"></path></svg></span><div class="info"><div class="l">Email</div><div class="v">info@ai4cctv.in</div></div></div>
-        <div class="cf-row"><span class="tile s48 t-teal"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4c0 9 6 15 15 15v-3l-3.5-1.5-2 2c-3-1-5-3-6-6l2-2L9 5Z"></path></svg></span><div class="info"><div class="l">Phone</div><div class="v">+91 98765 43210</div></div></div>
+        <div class="cf-row"><span class="tile s48 t-blue"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 7 9-7"></path></svg></span><div class="info"><div class="l">Email</div><div class="v">contact@ai4cctv.in</div></div></div>
+        <div class="cf-row"><span class="tile s48 t-teal"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4c0 9 6 15 15 15v-3l-3.5-1.5-2 2c-3-1-5-3-6-6l2-2L9 5Z"></path></svg></span><div class="info"><div class="l">Phone</div><div class="v">+91 8100280356</div></div></div>
         <div class="cf-row"><span class="tile s48 t-violet"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg></span><div class="info"><div class="l">Hours</div><div class="v">Mon–Sat, 9 AM–7 PM IST</div></div></div>
       </div>
     </div>
@@ -2113,15 +2129,15 @@ onAuthStateChanged(auth,user=>{window._adminUser=user;if(user&&document.getEleme
           <li onclick="go('contact')">Book a demo</li>
         </ul></nav>
         <nav class="fcol"><h5>Contact</h5><ul>
-          <li>info@ai4cctv.in</li>
-          <li>+91 98765 43210</li>
+          <li>contact@ai4cctv.in</li>
+          <li>+91 8100280356</li>
           <li>www.ai4cctv.in</li>
           <li>Mon–Sat 9AM–7PM IST</li>
         </ul></nav>
       </div>
       <div class="f-bar">
         <p>© 2024 ai<em style="color:var(--pri);font-style:normal;">4</em>cctv. Smart attendance. Simplified work. Better tomorrow.</p>
-        <div class="links"><a>Privacy</a><a>Terms</a><a>Security</a><a>info@ai4cctv.in</a></div>
+        <div class="links"><a>Privacy</a><a>Terms</a><a>Security</a><a>contact@ai4cctv.in</a></div>
       </div>
     </div>
   </div>
